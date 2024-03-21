@@ -167,7 +167,7 @@ jobs:
         run: |2-
 
               git fetch --all
-              git checkout ${{ github.event.client_payload.commitId }}
+              git checkout ${{ github.event.client_payload.commitId }} || true
       - name: 'Run :: Decoding Secrets af6e45'
         run: |2-
 
