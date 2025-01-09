@@ -1,4 +1,4 @@
-name: coffee-order-service_pr-default-staging_app_463889f Pipeline (Skyu Generated)
+name: coffee-order-service_pr_app_463889f Pipeline (Skyu Generated)
 'on':
   pull_request:
     types:
@@ -8,7 +8,7 @@ name: coffee-order-service_pr-default-staging_app_463889f Pipeline (Skyu Generat
   repository_dispatch:
     types: pipeline_01ebce46-506a-4938-bee0-68aa056fe4f5
 env:
-  ENCODED_PIPELINE_SECRET: ${{secrets.COFFEEORDERSVC_COFFEEORDERSERVICE_PRDEFAULTSTAGING_APP_463889F}}
+  ENCODED_PIPELINE_SECRET: ${{secrets.COFFEEORDERSVC_COFFEEORDERSERVICE_PR_APP_463889F}}
   COMMIT_ID: ${{github.event.client_payload.commitId || github.sha || github.run_id}}
   BRANCH_NAME: >-
     ${{github.event.client_payload.branchName || github.event.branch ||
